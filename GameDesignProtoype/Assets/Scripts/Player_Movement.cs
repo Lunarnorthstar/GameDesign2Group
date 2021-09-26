@@ -15,11 +15,24 @@ public class Player_Movement : MonoBehaviour
     private Rigidbody2D myRB;
     private bool canJump;
     private SpriteRenderer mySprite;
+    private bool canMove;
+    private string objectName;
 
     private void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         mySprite = GetComponentInChildren<SpriteRenderer>();
+        objectName = gameObject.name;
+        if (objectName == "Player")
+        {
+            canMove = true;
+
+        }
+        else
+        {
+            canMove = false;
+            
+        }
     }
 
     private void FixedUpdate()
@@ -40,7 +53,7 @@ public class Player_Movement : MonoBehaviour
             myRB.AddForce(moveAxis * moveSpeed, ForceMode2D.Force);
         }
 
-        if (groundCheck.IsTouchingLayers(groundLayers))
+        if (groundCheck.IsTouchingLayers(groundLayers) && canMove == true)
         {
             canJump = true;
         }
@@ -53,12 +66,21 @@ public class Player_Movement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        moveDir = context.ReadValue<float>();
+        if (canMove == true)
+        {
+            moveDir = context.ReadValue<float>();
+        }
+        else { }
+
     }
 
     public void Move(float moveAmt)
     {
-        moveDir = moveAmt;
+        if (canMove == true)
+        {
+            moveDir = moveAmt;
+        }
+        else { }
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -77,4 +99,17 @@ public class Player_Movement : MonoBehaviour
             myRB.velocity = new Vector2(myRB.velocity.x, 0f);
         }
     }
+
+    public void ActivateMovement()
+    {
+        canMove = true;
+ 
+    }
+    public void DeactivateMovement()
+    {
+        canMove = false;
+
+    }
+
+
 }
