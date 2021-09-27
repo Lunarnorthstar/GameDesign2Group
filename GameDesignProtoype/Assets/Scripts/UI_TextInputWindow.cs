@@ -12,9 +12,9 @@ public class UI_TextInputWindow : MonoBehaviour
     public TMP_InputField name1;
     public TMP_InputField name2;
     public TMP_InputField name3;
-    public GameObject minion1;
-    public GameObject minion2;
-    public GameObject minion3;
+    public TMP_Text minion1Tag;
+    public TMP_Text minion2Tag;
+    public TMP_Text minion3Tag;
 
     void Start()
     {
@@ -25,12 +25,12 @@ public class UI_TextInputWindow : MonoBehaviour
 
     public void StoreName()
     {
-        minion1Name = name1.text;
-        minion2Name = name2.text;
-        minion3Name = name3.text;
-        name1.text = minion1.name;
-        name2.text = minion2.name;
-        name3.text = minion3.name;
+        minion1Name = minion1Tag.text;
+        minion2Name = minion2Tag.text;
+        minion3Name = minion3Tag.text;
+        minion1Tag.text = name1.text;
+        minion2Tag.text = name2.text;
+        minion3Tag.text = name3.text;
     }
 
     public void Hide()
