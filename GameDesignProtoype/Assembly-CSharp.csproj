@@ -48,8 +48,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player_Pickup.cs" />
+     <Compile Include="Assets\checkPoint.cs" />
+     <Compile Include="Assets\checkpointColliderScript.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\LoadLevelOnTrigger.cs" />
+     <Compile Include="Assets\killZone.cs" />
+     <Compile Include="Assets\Scripts\Change_Character.cs" />
      <Compile Include="Assets\Scripts\Player_Movement.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
