@@ -25,12 +25,12 @@ public class UI_TextInputWindow : MonoBehaviour
 
     public void StoreName()
     {
-        name1.text = minion1Name;
-        name2.text = minion2Name;
-        name3.text = minion3Name;
-        minion1Name = minion1.name;
-        minion2Name = minion2.name;
-        minion3Name = minion3.name;
+        minion1Name = name1.text;
+        minion2Name = name2.text;
+        minion3Name = name3.text;
+        name1.text = minion1.name;
+        name2.text = minion2.name;
+        name3.text = minion3.name;
     }
 
     public void Hide()
