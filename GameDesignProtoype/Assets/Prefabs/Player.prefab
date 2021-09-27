@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5885951626713334060}
   - component: {fileID: 5885951626713334061}
   - component: {fileID: 5885951626713333970}
+  - component: {fileID: -8343301423712167406}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -246,11 +247,39 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 5f9561f0-fccd-4a06-8390-3343ef598df3
     m_ActionName: Gameplay/Pause[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 35186b18-16c3-470f-a501-30dd6a496784
+    m_ActionName: Gameplay/ControlMain[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3211f2ec-4f4e-46db-8719-096b5e7d9652
+    m_ActionName: Gameplay/Minion1[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74165648-c631-43d9-ac92-83180cb1035c
+    m_ActionName: Gameplay/Minion2[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 13098919-de7e-4d1d-96ec-86e399e5b855
+    m_ActionName: Gameplay/Minion3[/Keyboard/4]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &-8343301423712167406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885951626713333968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405f36e4976c2864e939d2482d81e8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5885951627300051304
 GameObject:
   m_ObjectHideFlags: 0
