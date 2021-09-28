@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 8801670445290999609}
   - component: {fileID: 8801670445290999615}
   m_Layer: 0
-  m_Name: CM vcam2
+  m_Name: PlayerFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8801670445290999608
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8801670445290999610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4385703, y: -3.6127954, z: -8.885369}
+  m_LocalPosition: {x: 0, y: -3, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8801670446295585638}
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 3.66
+    OrthographicSize: 7.38
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8801670445616049527}
   - component: {fileID: 8801670445616049520}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: FullScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8801670445616049521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.61, y: 1.29, z: -8.885369}
+  m_LocalPosition: {x: 0, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8801670446814523112}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 7.79
+    OrthographicSize: 25
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8801670445694233023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.64, y: -3.313795, z: -11.979248}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 4.3875, y: 3.7781248, z: 1}
   m_Children: []
   m_Father: {fileID: 8801670445624172357}
@@ -357,8 +357,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8801670446236343709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3685703, y: 0.09620476, z: -12.472351}
-  m_LocalScale: {x: 17.6085, y: 10.0725, z: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8801670445624172357}
   m_RootOrder: 3
@@ -404,20 +404,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 8801670446236343681}
     m_ColliderPaths:
-    - - X: 124453259
-        Y: -54531780
-      - X: 124453259
-        Y: 90720704
-      - X: -129266560
-        Y: 90720411
-      - X: -129266267
-        Y: -54531780
+    - - X: 344191387
+        Y: -77288048
+      - X: 344191387
+        Y: 308482272
+      - X: -346176288
+        Y: 308481979
+      - X: -346175995
+        Y: -77288048
   m_CompositePaths:
     m_Paths:
-    - - {x: 12.445297, y: -5.453178}
-      - {x: 12.445297, y: 9.07207}
-      - {x: -12.926656, y: 9.072012}
-      - {x: -12.926598, y: -5.453178}
+    - - {x: 34.41911, y: -7.728805}
+      - {x: 34.41911, y: 30.848228}
+      - {x: -34.61763, y: 30.84817}
+      - {x: -34.617573, y: -7.728805}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!61 &8801670446236343681
@@ -433,7 +433,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: -0.013666689, y: 0.17964217}
+  m_Offset: {x: -0.09923172, y: 11.559712}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -444,7 +444,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4408957, y: 1.4420698}
+  m_Size: {x: 69.0368, y: 38.577034}
   m_EdgeRadius: 0
 --- !u!1 &8801670446295585639
 GameObject:
@@ -560,8 +560,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8801670446557705839}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.61, y: 1.29, z: -8.885369}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0000009536743, y: 1.651195, z: -9}
+  m_LocalScale: {x: 1.5125, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8801670445624172357}
   m_RootOrder: 0
@@ -593,7 +593,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.79
+  orthographic size: 7.38
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
