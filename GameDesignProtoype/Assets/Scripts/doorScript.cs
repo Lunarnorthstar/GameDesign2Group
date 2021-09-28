@@ -13,7 +13,7 @@ public class doorScript : MonoBehaviour
     public GameObject door;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")) //If the player bumps into you...
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Minion1")) //If the player bumps into you...
         {
             door.SetActive(false); //Make door go away
         }
