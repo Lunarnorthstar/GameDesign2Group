@@ -17,6 +17,7 @@ public class Player_Movement : MonoBehaviour
     private SpriteRenderer mySprite;
     private bool canMove;
     private string objectName;
+    private bool isActive;
 
     private void Start()
     {
@@ -26,12 +27,12 @@ public class Player_Movement : MonoBehaviour
         if (objectName == "Player")
         {
             canMove = true;
-
+            isActive = true;
         }
         else
         {
             canMove = false;
-
+            isActive = false;
         }
     }
 
@@ -102,13 +103,20 @@ public class Player_Movement : MonoBehaviour
 
     public void ActivateMovement()
     {
-        canMove = true;
-
+        if (isActive == true)
+        {
+            canMove = true;
+        }
     }
     public void DeactivateMovement()
     {
         canMove = false;
 
+    }
+
+    public void ActivateMinion()
+    {
+        isActive = true;
     }
 
 
