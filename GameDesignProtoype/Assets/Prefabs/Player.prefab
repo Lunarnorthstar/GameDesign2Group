@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5885951626713334061}
   - component: {fileID: 5885951626713333970}
   - component: {fileID: -8343301423712167406}
+  - component: {fileID: 395820475}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -154,7 +155,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 5
   m_AngularDrag: 10
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -248,23 +249,71 @@ MonoBehaviour:
     m_ActionId: 5f9561f0-fccd-4a06-8390-3343ef598df3
     m_ActionName: Gameplay/Pause[/Keyboard/p]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 35186b18-16c3-470f-a501-30dd6a496784
-    m_ActionName: Gameplay/ControlMain[/Keyboard/1]
+      m_Calls:
+      - m_Target: {fileID: 395820475}
+        m_TargetAssemblyTypeName: Change_Character, Assembly-CSharp
+        m_MethodName: ChangeCharacter4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 13098919-de7e-4d1d-96ec-86e399e5b855
+    m_ActionName: Gameplay/Minion3[/Keyboard/4]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 3211f2ec-4f4e-46db-8719-096b5e7d9652
-    m_ActionName: Gameplay/Minion1[/Keyboard/2]
-  - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 395820475}
+        m_TargetAssemblyTypeName: Change_Character, Assembly-CSharp
+        m_MethodName: ChangeCharacter3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 74165648-c631-43d9-ac92-83180cb1035c
     m_ActionName: Gameplay/Minion2[/Keyboard/3]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 13098919-de7e-4d1d-96ec-86e399e5b855
-    m_ActionName: Gameplay/Minion3[/Keyboard/4]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard
+      m_Calls:
+      - m_Target: {fileID: 395820475}
+        m_TargetAssemblyTypeName: Change_Character, Assembly-CSharp
+        m_MethodName: ChangeCharacter2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3211f2ec-4f4e-46db-8719-096b5e7d9652
+    m_ActionName: Gameplay/Minion1[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 395820475}
+        m_TargetAssemblyTypeName: Change_Character, Assembly-CSharp
+        m_MethodName: ChangeCharacter1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 35186b18-16c3-470f-a501-30dd6a496784
+    m_ActionName: Gameplay/ControlMain[/Keyboard/1]
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -278,6 +327,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405f36e4976c2864e939d2482d81e8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &395820475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885951626713333968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357491640e63f3643ae2c95dd8b7d4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5885951627300051304

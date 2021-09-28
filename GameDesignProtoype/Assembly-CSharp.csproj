@@ -48,9 +48,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player_Pickup.cs" />
+     <Compile Include="Assets\Scripts\doorScript.cs" />
      <Compile Include="Assets\Scripts\checkPoint.cs" />
      <Compile Include="Assets\Scripts\UI_TextInputWindow.cs" />
+     <Compile Include="Assets\Scripts\CollectMinion.cs" />
      <Compile Include="Assets\Scripts\ClampName.cs" />
+     <Compile Include="Assets\Scripts\changeColor.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\killZone.cs" />
      <Compile Include="Assets\Scripts\checkpointColliderScript.cs" />
