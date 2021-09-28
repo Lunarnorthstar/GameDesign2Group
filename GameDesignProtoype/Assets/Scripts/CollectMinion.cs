@@ -21,6 +21,7 @@ public class CollectMinion : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             gameObject.SendMessage("ActivateMinion");
+            gameObject.SendMessage("Activate");
         }
 
     }

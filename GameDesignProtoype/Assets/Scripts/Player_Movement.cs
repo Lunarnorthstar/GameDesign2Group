@@ -11,13 +11,13 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayers;
     [SerializeField] private bool cancelJumpEnabled;
 
-    private float moveDir;
-    private Rigidbody2D myRB;
-    private bool canJump;
-    private SpriteRenderer mySprite;
-    private bool canMove;
-    private string objectName;
-    private bool isActive;
+    private float moveDir; //The direction you are moving in
+    private Rigidbody2D myRB; //Your rigidbody
+    private bool canJump; //Whether or not you can jump
+    private SpriteRenderer mySprite;//Your sprite component
+    private bool canMove; //Whether or not you can move
+    private string objectName; //Your name
+    private bool isActive; //Whether or not You are "active"; Whether you can be controlled and move.
 
     private void Start()
     {
@@ -43,28 +43,27 @@ public class Player_Movement : MonoBehaviour
         if (moveDir > 0)
         {
             mySprite.flipX = false;
-        }
+        }//Unflip your sprite if moving right
 
         if (moveDir < 0)
         {
             mySprite.flipX = true;
-        }
+        }//Flip your sprite if moving left
         var moveAxis = Vector2.right * moveDir;
 
         if (Mathf.Abs(myRB.velocity.x) < maxSpeed)
         {
             myRB.AddForce(moveAxis * moveSpeed, ForceMode2D.Force);
-        }
+        } //Moves you.
 
         if (groundCheck.IsTouchingLayers(groundLayers) && canMove == true)
         {
             canJump = true;
-        }
+        } //If you're touching the ground you can jump, otherwise you can't.
         else
         {
             canJump = false;
         }
-        //I have no idea, naomi made this part
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -103,6 +102,8 @@ public class Player_Movement : MonoBehaviour
             myRB.velocity = new Vector2(myRB.velocity.x, 0f);
         }
     }
+
+
 
     public void ActivateMovement()
     {
