@@ -26,6 +26,7 @@ public class Player_Movement : MonoBehaviour
         objectName = gameObject.name;
         if (objectName == "Player")
         {
+            
             canMove = true;
             isActive = true;
         }
@@ -34,6 +35,7 @@ public class Player_Movement : MonoBehaviour
             canMove = false;
             isActive = false;
         }
+        //this code checks the tag of the game object, if the object is the player it can move right away and it's active, if it's not the player canMove is set to false
     }
 
     private void FixedUpdate()
@@ -62,7 +64,7 @@ public class Player_Movement : MonoBehaviour
         {
             canJump = false;
         }
-
+        //I have no idea, naomi made this part
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -72,6 +74,7 @@ public class Player_Movement : MonoBehaviour
             moveDir = context.ReadValue<float>();
         }
         else { }
+        //if the gameObject canMove is true, the object is able to move
 
     }
 
@@ -103,6 +106,7 @@ public class Player_Movement : MonoBehaviour
 
     public void ActivateMovement()
     {
+        //this get called from the Change_Character script, it sets the gameObject canMove state to true if the object isActive is true
         if (isActive == true)
         {
             canMove = true;
@@ -110,12 +114,14 @@ public class Player_Movement : MonoBehaviour
     }
     public void DeactivateMovement()
     {
+        //this get called from the Change_Character script, it sets the gameObject canMove state to false
         canMove = false;
 
     }
 
     public void ActivateMinion()
     {
+        //this get called from the CollectMinion script, when the player enters the trigger zone, the minion is set to active
         isActive = true;
     }
 
