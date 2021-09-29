@@ -19,6 +19,7 @@ public class Player_Movement : MonoBehaviour
     private bool canMove; //Whether or not you can move
     private string objectName; //Your name
     private bool isActive; //Whether or not You are "active"; Whether you can be controlled and move.
+    private bool isActivatable = true; //This gets set to false if You are a minion and You touch the deathplane.
 
     private void Start()
     {
@@ -126,9 +127,22 @@ public class Player_Movement : MonoBehaviour
     public void ActivateMinion()
     {
         //this get called from the CollectMinion script, when the player enters the trigger zone, the minion is set to active
-        isActive = true;
+        if (isActivatable)
+        {
+            isActive = true;
 
-        gameObject.transform.GetChild(3).gameObject.SetActive(true);
+            gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        }
+    }
+    
+    public void DeactivateMinion()
+    {
+        //this get called from the CollectMinion script, when the minion enters the death zone, the minion is set to inactive
+        isActive = false;
+        isActivatable = false;
+        DeactivateMovement();
+
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);
     }
 
    
