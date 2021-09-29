@@ -11,6 +11,7 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayers;
     [SerializeField] private bool cancelJumpEnabled;
 
+   
     private float moveDir; //The direction you are moving in
     private Rigidbody2D myRB; //Your rigidbody
     private bool canJump; //Whether or not you can jump
@@ -21,6 +22,7 @@ public class Player_Movement : MonoBehaviour
 
     private void Start()
     {
+        
         myRB = GetComponent<Rigidbody2D>();
         mySprite = GetComponentInChildren<SpriteRenderer>();
         objectName = gameObject.name;
@@ -37,6 +39,7 @@ public class Player_Movement : MonoBehaviour
         }
         //this code checks the tag of the game object, if the object is the player it can move right away and it's active, if it's not the player canMove is set to false
     }
+
 
     private void FixedUpdate()
     {
@@ -124,7 +127,11 @@ public class Player_Movement : MonoBehaviour
     {
         //this get called from the CollectMinion script, when the player enters the trigger zone, the minion is set to active
         isActive = true;
+
+        gameObject.transform.GetChild(3).gameObject.SetActive(true);
     }
+
+   
 
 
 }
