@@ -130,6 +130,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+    - target: {fileID: 770603821599498697, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_text
+      value: 'Name your first minion (Active Button: 2)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022515087011045028, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022515087011045028, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
+>>>>>>> parent of 2df3ffc1 (Revert "Demo Update 2")
     - target: {fileID: 6742847409326854360, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_RootOrder
       value: 14
