@@ -131,7 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 770603821599498697, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_text
       value: 'Name your first minion (Active Button: 2)'
