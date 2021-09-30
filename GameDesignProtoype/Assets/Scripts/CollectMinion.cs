@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectMinion : MonoBehaviour
 {
+    private bool Collided;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,17 @@ public class CollectMinion : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            gameObject.SendMessage("ActivateMinion");
-            gameObject.SendMessage("Activate");
+            if (Collided == true)
+            {
+
+            }
+            else
+            {
+                gameObject.SendMessage("ActivateMinion");
+                gameObject.SendMessage("Activate");
+                GameObject.Find("Player").SendMessage("DeactivateMovement");
+                Collided = true;
+            }
         }
 
     }
