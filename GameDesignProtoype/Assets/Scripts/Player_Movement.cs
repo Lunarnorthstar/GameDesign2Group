@@ -76,7 +76,9 @@ public class Player_Movement : MonoBehaviour
         {
             moveDir = context.ReadValue<float>();
         }
-        else { }
+        else {
+            moveDir = 0;
+        }
         //if the gameObject canMove is true, the object is able to move
 
     }
