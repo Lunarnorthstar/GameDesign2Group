@@ -19,6 +19,7 @@ public class UI_TextInputWindow : MonoBehaviour
     {
         minionName = minionTag.text;
         minionTag.text = newName.text;
+        GameObject.Find("Player").SendMessage("ActivateMovement");
     }
 
     public void Hide()
