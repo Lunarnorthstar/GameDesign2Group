@@ -15,7 +15,7 @@ public class Player_Pickup : MonoBehaviour
     {
         if (playerCheck.IsTouchingLayers(playerLayers))
         {
-            manager.AddScore(scoreToGive);
+            
             Destroy(gameObject);
         }
     }
