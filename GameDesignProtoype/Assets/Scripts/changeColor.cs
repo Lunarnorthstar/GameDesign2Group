@@ -5,24 +5,38 @@ using UnityEngine;
 public class changeColor : MonoBehaviour
 {
 
-   /* public material off = MM1;
-    public material on;*/
+    [SerializeField] private Color MM1 = Color.white;
+    [SerializeField] private Color MM1A = Color.white;
+    
+    public SpriteRenderer myObject;
+
     // Start is called before the first frame update
     void Start()
     {
         
+        myObject = GetComponent<SpriteRenderer>();
     }
-    /*
-    public void changeColor(context)
+    
+    public void changeColorOn()
     {
-        if (gameObject.name == context)
-        { 
+       
+            
+            
+            myObject.material.color = MM1A;
         
-        }
         
-    }*/
+    }
+    public void changeColorOff()
+    {
+        
+            Debug.Log("imma go stupid");
+           
+            myObject.material.color = MM1;
+        
+
+    }
 
 
 
- 
+
 }

@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8fe0e80f81b34a14d838049e1336b1ef, type: 3}
+    - target: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6742847409326854360, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -298,6 +302,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+--- !u!1 &126102173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6742847408230340484, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+  m_PrefabInstance: {fileID: 126102172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &126102174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126102173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec46ef945f989b94b8784c460bcc8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MM1: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
+  MM1A: {r: 0.9433962, g: 0.27144888, b: 0.29022327, a: 1}
+  myObject: {fileID: 126102176}
+--- !u!212 &126102176 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+  m_PrefabInstance: {fileID: 126102172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &155029876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,6 +776,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2017565230329918922, guid: 709f62d3346fc214cbb03ee91e6c1c37, type: 3}
   m_PrefabInstance: {fileID: 1139800514}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &327241990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1582314821225549456, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
+  m_PrefabInstance: {fileID: 1292157268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &327241992 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1582314821225549462, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
+  m_PrefabInstance: {fileID: 1292157268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &327241993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327241990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec46ef945f989b94b8784c460bcc8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MM1: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  MM1A: {r: 0.24146372, g: 0.990566, b: 0.06074228, a: 1}
+  myObject: {fileID: 327241992}
 --- !u!1 &355370514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1305,31 @@ Transform:
   m_Father: {fileID: 1563741497}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &539923250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7121530523173412228, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
+  m_PrefabInstance: {fileID: 1260797046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &539923252 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7121530523173412346, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
+  m_PrefabInstance: {fileID: 1260797046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &539923253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539923250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec46ef945f989b94b8784c460bcc8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MM1: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+  MM1A: {r: 0.2783019, g: 0.46646973, b: 1, a: 1}
+  myObject: {fileID: 539923252}
 --- !u!4 &548617008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2017565230329918922, guid: 709f62d3346fc214cbb03ee91e6c1c37, type: 3}

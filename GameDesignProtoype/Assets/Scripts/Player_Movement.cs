@@ -44,6 +44,7 @@ public class Player_Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        /*
         if (moveDir > 0)
         {
             mySprite.flipX = false;
@@ -53,6 +54,7 @@ public class Player_Movement : MonoBehaviour
         {
             mySprite.flipX = true;
         }//Flip your sprite if moving left
+        */
         var moveAxis = Vector2.right * moveDir;
 
         if (Mathf.Abs(myRB.velocity.x) < maxSpeed)
