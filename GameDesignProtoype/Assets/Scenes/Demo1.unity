@@ -160,26 +160,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8fe0e80f81b34a14d838049e1336b1ef, type: 3}
-    - target: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742847408230340486, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6742847409326854360, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3713,7 +3693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9085395759348850977, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.03
+      value: 21.18
       objectReference: {fileID: 0}
     - target: {fileID: 9085395759348850977, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3763,21 +3743,21 @@ PrefabInstance:
       propertyPath: minionCall3
       value: 
       objectReference: {fileID: 303036911}
+    - target: {fileID: 9085395759348851004, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
+      propertyPath: minionDead1
+      value: 
+      objectReference: {fileID: 376078564}
+    - target: {fileID: 9085395759348851004, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
+      propertyPath: minionDead2
+      value: 
+      objectReference: {fileID: 156807731}
+    - target: {fileID: 9085395759348851004, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
+      propertyPath: minionDead3
+      value: 
+      objectReference: {fileID: 303036911}
     - target: {fileID: 9085395759348851005, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
       propertyPath: m_Name
       value: deathplane
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085395759348851006, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085395759348851006, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085395759348851006, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6951095a36dfe4d419a3593b1b115189, type: 3}
@@ -4097,22 +4077,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 7121530523173412346, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8fe0e80f81b34a14d838049e1336b1ef, type: 3}
-    - target: {fileID: 7121530523173412346, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121530523173412346, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121530523173412346, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5176471
-      objectReference: {fileID: 0}
     - target: {fileID: 7121530523464146745, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
       propertyPath: playerCam
       value: 
@@ -4211,22 +4175,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1582314821225549462, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8fe0e80f81b34a14d838049e1336b1ef, type: 3}
-    - target: {fileID: 1582314821225549462, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582314821225549462, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582314821225549462, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5176471
-      objectReference: {fileID: 0}
     - target: {fileID: 1582314822091815280, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
       propertyPath: playerCam
       value: 

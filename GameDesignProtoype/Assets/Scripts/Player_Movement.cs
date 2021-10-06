@@ -125,7 +125,6 @@ public class Player_Movement : MonoBehaviour
     {
         //this get called from the Change_Character script, it sets the gameObject canMove state to false
         canMove = false;
-
     }
 
     public void ActivateMinion()

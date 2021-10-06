@@ -9,6 +9,7 @@ public class changeColor : MonoBehaviour
     [SerializeField] private Color MM1I = Color.white;
 
     public SpriteRenderer myObject;
+    public Sprite deadSprite;
 
     void Start()
     {
@@ -27,5 +28,6 @@ public class changeColor : MonoBehaviour
     public void changeColorDead()
     {
         myObject.material.color = MM1I;
+        myObject.sprite = deadSprite;
     }
 }
