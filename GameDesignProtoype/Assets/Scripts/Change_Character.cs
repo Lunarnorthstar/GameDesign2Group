@@ -49,7 +49,6 @@ public class Change_Character : MonoBehaviour
         minionCam1.SetActive(true);
         minionCam2.SetActive(false);
         minionCam3.SetActive(false);
-        
     }
     public void ChangeCharacter3()
     {
