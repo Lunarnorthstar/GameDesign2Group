@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void AddScore()
+    {
+
+    }
 
     public void PauseGame()
     {
