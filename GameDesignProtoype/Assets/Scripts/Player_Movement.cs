@@ -132,6 +132,7 @@ public class Player_Movement : MonoBehaviour
         //this get called from the CollectMinion script, when the player enters the trigger zone, the minion is set to active
         if (isActivatable)
         {
+            
             isActive = true;
 
             gameObject.transform.GetChild(3).gameObject.SetActive(true);

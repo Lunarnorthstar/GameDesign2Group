@@ -26,9 +26,11 @@ public class CollectMinion : MonoBehaviour
             }
             else
             {
+                
                 gameObject.SendMessage("ActivateMinion");
                 gameObject.SendMessage("Activate");
                 GameObject.Find("Player").SendMessage("DeactivateMovement");
+                
                 Collided = true;
             }
         }
