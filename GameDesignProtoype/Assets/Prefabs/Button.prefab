@@ -205,7 +205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 6760107248644050821, guid: 2bd9f0f2c973d5b4f9a4a06621af98d6, type: 3}
   m_Color: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -228,6 +228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87c0316675ef4e4da4dc61cfa248da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsToggleDoor: 0
+  door: {fileID: 300897378286588911}
+  myButton: {fileID: 1873588588564475539}
+  buttonOn: {fileID: -4432381401437561306, guid: 2bd9f0f2c973d5b4f9a4a06621af98d6, type: 3}
+  buttonOff: {fileID: 6760107248644050821, guid: 2bd9f0f2c973d5b4f9a4a06621af98d6, type: 3}
 --- !u!61 &4957531736482493989
 BoxCollider2D:
   m_ObjectHideFlags: 0

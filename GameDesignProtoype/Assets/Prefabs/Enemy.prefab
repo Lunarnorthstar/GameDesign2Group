@@ -98,6 +98,6 @@ MonoBehaviour:
   playerCheck: {fileID: 0}
   playerLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   manager: {fileID: 0}
   scoreToGive: 100
