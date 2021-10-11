@@ -4836,7 +4836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &355370515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5751,6 +5751,18 @@ PrefabInstance:
     - target: {fileID: 2706763658641491662, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: IsToggleDoor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49038807
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.g
+      value: 0.52430916
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7169812
       objectReference: {fileID: 0}
     - target: {fileID: 4596621585618494859, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_Name
@@ -7588,6 +7600,18 @@ PrefabInstance:
       propertyPath: IsToggleDoor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.b
+      value: 0.45412073
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.g
+      value: 0.47793612
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6132076
+      objectReference: {fileID: 0}
     - target: {fileID: 4596621585618494859, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_Name
       value: Button (4)
@@ -7641,12 +7665,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7166749959016520136, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.575
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166749959016520136, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.68
       objectReference: {fileID: 0}
     - target: {fileID: 7166749959016520136, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.32
+      value: 19.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
@@ -7781,6 +7809,18 @@ PrefabInstance:
     - target: {fileID: 2706763658641491662, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: IsToggleDoor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5086774
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5327993
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6698113
       objectReference: {fileID: 0}
     - target: {fileID: 4596621585618494859, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_Name
