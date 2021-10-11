@@ -29,6 +29,7 @@ public class killZone : MonoBehaviour
 
             if (other.gameObject.CompareTag("Minion1"))
             {
+                GameObject.FindWithTag("Minion1").GetComponent<AudioSource>().volume = 0.0f;
                 GameObject.FindWithTag("Minion1").SendMessage("DeactivateMinion");
                 minionDead1.SendMessage("changeColorDead");
                 tempactive = false; //This and other duplicate lines deactivate the death plane, but only when the minions touch it.
@@ -37,6 +38,7 @@ public class killZone : MonoBehaviour
 
             if (other.gameObject.CompareTag("Minion2"))
             {
+                GameObject.FindWithTag("Minion2").GetComponent<AudioSource>().volume = 0.0f;
                 GameObject.FindWithTag("Minion2").SendMessage("DeactivateMinion");
                 minionDead2.SendMessage("changeColorDead");
                 tempactive = false;
@@ -44,6 +46,7 @@ public class killZone : MonoBehaviour
 
             if (other.gameObject.CompareTag("Minion3"))
             {
+                GameObject.FindWithTag("Minion3").GetComponent<AudioSource>().volume = 0.0f;
                 GameObject.FindWithTag("Minion3").SendMessage("DeactivateMinion");
                 minionDead3.SendMessage("changeColorDead");
                 tempactive = false;

@@ -32,6 +32,7 @@ public class CollectMinion : MonoBehaviour
                 GameObject.Find("Player").SendMessage("DeactivateMovement");
                 
                 Collided = true;
+                gameObject.GetComponent<AudioSource>().volume = 1.0f;
             }
         }
 
