@@ -168,6 +168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2022515087011045028, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_TagString
+      value: Minion1
+      objectReference: {fileID: 0}
     - target: {fileID: 3455553951131525337, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -203,6 +207,10 @@ PrefabInstance:
     - target: {fileID: 3806678041669585378, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671859932736343401, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_TagString
+      value: Minion1
       objectReference: {fileID: 0}
     - target: {fileID: 5088803849476654542, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_IsActive
@@ -371,6 +379,10 @@ PrefabInstance:
     - target: {fileID: 6742847409326854365, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: m_Name
       value: Minion (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405285232223240012, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
+      propertyPath: m_TagString
+      value: Minion1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
@@ -6405,6 +6417,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 361811025200557972, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
+      propertyPath: m_TagString
+      value: Minion3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044314390013985513, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
+      propertyPath: m_TagString
+      value: Minion3
+      objectReference: {fileID: 0}
     - target: {fileID: 5200410672109702131, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -6616,6 +6636,10 @@ PrefabInstance:
     - target: {fileID: 7940284463789435007, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
       propertyPath: m_Name
       value: Minion3TagText
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940284463789435007, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
+      propertyPath: m_TagString
+      value: Minion3
       objectReference: {fileID: 0}
     - target: {fileID: 8165369049591937938, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6854,6 +6878,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4325103120327661194, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
+      propertyPath: m_TagString
+      value: Minion2
+      objectReference: {fileID: 0}
     - target: {fileID: 4509316384570416555, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
       propertyPath: m_SizeDelta.y
       value: 30
@@ -6866,9 +6894,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5611797142264021552, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
+      propertyPath: m_TagString
+      value: Minion2
+      objectReference: {fileID: 0}
     - target: {fileID: 8401622762974764848, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
       propertyPath: m_Name
       value: Minion2TagText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401622762974764848, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
+      propertyPath: m_TagString
+      value: Minion2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
@@ -7210,7 +7246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4822361433368030075, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4822361433368030075, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7404,7 +7440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4822361433368030075, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4822361433368030075, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8803,7 +8839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4822361433368030075, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4822361433368030075, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_LocalRotation.w
