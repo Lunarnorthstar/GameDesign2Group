@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 685c6ed2054b9c542b8ea47f13aa553e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -134,12 +134,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 40
   maxSpeed: 45
-  jumpForce: 20
+  jumpForce: 22
   groundCheck: {fileID: 5885951627300051306}
   groundLayers:
     serializedVersion: 2
     m_Bits: 8
-  cancelJumpEnabled: 1
+  cancelJumpEnabled: 0
 --- !u!50 &5885951626713334060
 Rigidbody2D:
   serializedVersion: 4
@@ -341,6 +341,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357491640e63f3643ae2c95dd8b7d4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCam: {fileID: 0}
+  minionCam1: {fileID: 0}
+  minionCam2: {fileID: 0}
+  minionCam3: {fileID: 0}
+  minionCall1: {fileID: 0}
+  minionCall2: {fileID: 0}
+  minionCall3: {fileID: 0}
+  canChangeTo1: 1
+  canChangeTo2: 0
+  canChangeTo3: 0
+  canChangeTo4: 0
 --- !u!1 &5885951627300051304
 GameObject:
   m_ObjectHideFlags: 0

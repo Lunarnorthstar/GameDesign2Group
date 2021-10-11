@@ -260,10 +260,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6742847409326854361, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
-      propertyPath: cancelJumpEnabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6742847409326854363, guid: 6760f337069e683429c19719d8dbce7c, type: 3}
       propertyPath: playerCam
       value: 
@@ -6241,10 +6237,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7121530523464146747, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
-      propertyPath: cancelJumpEnabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7121530523464146886, guid: d4186a2a5cf5657468ab9288f9895862, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -6390,10 +6382,6 @@ PrefabInstance:
       propertyPath: minionCall3
       value: 
       objectReference: {fileID: 303036911}
-    - target: {fileID: 1582314822091815282, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
-      propertyPath: cancelJumpEnabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1582314822091815283, guid: 0cf5ec592c64e0d40b1f35bc2240b24c, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -6908,18 +6896,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1873588588564475539, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
-      propertyPath: m_Color.b
-      value: 0.44001427
-      objectReference: {fileID: 0}
-    - target: {fileID: 1873588588564475539, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 1873588588564475539, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8833725
-      objectReference: {fileID: 0}
     - target: {fileID: 2706763658641491662, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: IsToggleDoor
       value: 1
@@ -7440,10 +7416,6 @@ PrefabInstance:
       propertyPath: minionCam3
       value: 
       objectReference: {fileID: 1227512963}
-    - target: {fileID: 5885951626651181621, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 685c6ed2054b9c542b8ea47f13aa553e, type: 3}
     - target: {fileID: 5885951626713333968, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7590,14 +7562,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5885951626713333971, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5885951626713334063, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
-      propertyPath: jumpForce
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5885951626713334063, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
-      propertyPath: cancelJumpEnabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5885951627300051307, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}

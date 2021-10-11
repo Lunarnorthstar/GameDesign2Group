@@ -1329,7 +1329,7 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 8
-  cancelJumpEnabled: 1
+  cancelJumpEnabled: 0
 --- !u!50 &7121530523464146884
 Rigidbody2D:
   serializedVersion: 4
@@ -1526,6 +1526,10 @@ MonoBehaviour:
   minionCall1: {fileID: 0}
   minionCall2: {fileID: 0}
   minionCall3: {fileID: 7121530523464146887}
+  canChangeTo1: 1
+  canChangeTo2: 0
+  canChangeTo3: 0
+  canChangeTo4: 0
 --- !u!61 &282704498
 BoxCollider2D:
   m_ObjectHideFlags: 0
