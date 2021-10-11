@@ -70,53 +70,64 @@ public class Change_Character : MonoBehaviour
     }
     public void ChangeCharacter2()
     {
-        if (canChangeTo2 == true)
+        if (transform.CompareTag("Minion1"))
         {
-            gameObject.SendMessage("DeactivateMovement");
-            GameObject.Find("Player").SendMessage("DeactivateMovement");
-            Debug.Log(minionCall1.name);
-            GameObject.Find("Minion (1)").SendMessage("ActivateMovement");
-            minionCall1.SendMessage("changeColorOn");
-            minionCall2.SendMessage("changeColorOff");
-            minionCall3.SendMessage("changeColorOff");
-            playerCam.SetActive(false);
-            minionCam1.SetActive(true);
-            minionCam2.SetActive(false);
-            minionCam3.SetActive(false);
+            if (canChangeTo2 == true)
+            {
+                gameObject.SendMessage("DeactivateMovement");
+                GameObject.Find("Player").SendMessage("DeactivateMovement");
+                Debug.Log(minionCall1.name);
+                GameObject.Find("Minion (1)").SendMessage("ActivateMovement");
+                minionCall1.SendMessage("changeColorOn");
+                minionCall2.SendMessage("changeColorOff");
+                minionCall3.SendMessage("changeColorOff");
+                playerCam.SetActive(false);
+                minionCam1.SetActive(true);
+                minionCam2.SetActive(false);
+                minionCam3.SetActive(false);
+            }
         }
     }
     public void ChangeCharacter3()
     {
-        if (canChangeTo3 == true) 
+
+        if (transform.CompareTag("Minion2"))
         {
-            GameObject.Find("Player").SendMessage("DeactivateMovement");
-            gameObject.SendMessage("DeactivateMovement");
-        GameObject.Find("Minion (2)").SendMessage("ActivateMovement");
-        playerCam.SetActive(false);
-        minionCam1.SetActive(false);
-        minionCam2.SetActive(true);
-        minionCam3.SetActive(false);
-        GameObject.Find("Minion (1)").gameObject.transform.GetChild(0).gameObject.SendMessage("changeColorOff", gameObject.name);
-        minionCall1.SendMessage("changeColorOff");
-        minionCall2.SendMessage("changeColorOn");
-        minionCall3.SendMessage("changeColorOff");
+            if (canChangeTo3 == true)
+            {
+                GameObject.Find("Player").SendMessage("DeactivateMovement");
+                gameObject.SendMessage("DeactivateMovement");
+                GameObject.Find("Minion (2)").SendMessage("ActivateMovement");
+                playerCam.SetActive(false);
+                minionCam1.SetActive(false);
+                minionCam2.SetActive(true);
+                minionCam3.SetActive(false);
+                GameObject.Find("Minion (1)").gameObject.transform.GetChild(0).gameObject.SendMessage("changeColorOff", gameObject.name);
+                minionCall1.SendMessage("changeColorOff");
+                minionCall2.SendMessage("changeColorOn");
+                minionCall3.SendMessage("changeColorOff");
+            }
     }
     }
     public void ChangeCharacter4()
     {
-        if (canChangeTo4 == true)
+
+        if (transform.CompareTag("Minion3"))
         {
-            GameObject.Find("Player").SendMessage("DeactivateMovement");
-            gameObject.SendMessage("DeactivateMovement");
-            GameObject.Find("Minion (3)").SendMessage("ActivateMovement");
-            playerCam.SetActive(false);
-            minionCam1.SetActive(false);
-            minionCam2.SetActive(false);
-            minionCam3.SetActive(true);
-            GameObject.Find("Minion (1)").gameObject.transform.GetChild(0).gameObject.SendMessage("changeColorOff", gameObject.name);
-            minionCall1.SendMessage("changeColorOff");
-            minionCall2.SendMessage("changeColorOff");
-            minionCall3.SendMessage("changeColorOn");
+            if (canChangeTo4 == true)
+            {
+                GameObject.Find("Player").SendMessage("DeactivateMovement");
+                gameObject.SendMessage("DeactivateMovement");
+                GameObject.Find("Minion (3)").SendMessage("ActivateMovement");
+                playerCam.SetActive(false);
+                minionCam1.SetActive(false);
+                minionCam2.SetActive(false);
+                minionCam3.SetActive(true);
+                GameObject.Find("Minion (1)").gameObject.transform.GetChild(0).gameObject.SendMessage("changeColorOff", gameObject.name);
+                minionCall1.SendMessage("changeColorOff");
+                minionCall2.SendMessage("changeColorOff");
+                minionCall3.SendMessage("changeColorOn");
+            }
         }
     }
 }
