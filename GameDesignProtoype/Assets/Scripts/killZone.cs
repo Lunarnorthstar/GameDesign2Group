@@ -35,10 +35,10 @@ public class killZone : MonoBehaviour
                 tempactive = false; //This and other duplicate lines deactivate the death plane, but only when the minions touch it.
                 if (!permanent)
                 {
-                    other.gameObject.SetActive(false);
+                    gameObject.SetActive(false);
                 }
 
-                gameObject.tag = "Dead";
+                other.gameObject.tag = "Dead";
             }
 
             if (other.gameObject.CompareTag("Minion2"))

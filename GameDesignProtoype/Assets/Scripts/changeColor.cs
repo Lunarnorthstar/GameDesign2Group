@@ -15,10 +15,13 @@ public class changeColor : MonoBehaviour
     {
         myObject = GetComponent<SpriteRenderer>();
     }
-    
+
     public void changeColorOn()
     {
-        myObject.material.color = MM1A;
+        if (transform.parent.CompareTag("Minion1") || transform.parent.CompareTag("Minion2") || transform.parent.CompareTag("Minion3"))
+        {
+            myObject.material.color = MM1A;
+        }
     }
     public void changeColorOff()
     {
