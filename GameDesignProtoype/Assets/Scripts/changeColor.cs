@@ -22,7 +22,7 @@ public class changeColor : MonoBehaviour
     }
     public void changeColorOff()
     {
-        Debug.Log("imma go stupid");  
+        
         myObject.material.color = MM1;
     }
     public void changeColorDead()

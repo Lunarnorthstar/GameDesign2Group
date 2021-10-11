@@ -134,16 +134,17 @@ public class Player_Movement : MonoBehaviour
         {
             
             isActive = true;
-
+            gameObject.SendMessage("Activate");
             gameObject.transform.GetChild(3).gameObject.SetActive(true);
         }
     }
     
     public void DeactivateMinion()
     {
-        //this get called from the CollectMinion script, when the minion enters the death zone, the minion is set to inactive
+        //this get called from the Killzone script, when the minion enters the death zone, the minion is set to inactive
         isActive = false;
         isActivatable = false;
+        gameObject.SendMessage("Deactivate");
         DeactivateMovement();
 
         gameObject.transform.GetChild(3).gameObject.SetActive(false);

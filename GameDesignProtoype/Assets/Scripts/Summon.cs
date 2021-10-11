@@ -9,6 +9,8 @@ public class Summon : MonoBehaviour
     private float Ypos;
 
     private bool active = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,16 @@ public class Summon : MonoBehaviour
         Ypos = GameObject.Find("Player").transform.position.y;
     }
 
+
+
     public void Activate()
     {
         active = true;
+    }
+    
+    public void Deactivate()
+    {
+        active = false;
     }
     
     public void Call(InputAction.CallbackContext context)
