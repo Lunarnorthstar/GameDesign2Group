@@ -6,9 +6,9 @@ using TMPro;
 
 public class UI_TextInputWindow : MonoBehaviour
 {
-    public string minionName;
+    public string addName;
     public TMP_InputField newName;
-    public TMP_Text minionTag;
+    public TMP_Text nameTag;
 
     void Start()
     {
@@ -17,21 +17,25 @@ public class UI_TextInputWindow : MonoBehaviour
 
     public void StoreName()
     {
+        if (gameObject.CompareTag("Player"))
+        {
+            addName = nameTag.text;
+            nameTag.text = "(1) " + newName.text;
+        }
         if (gameObject.CompareTag("Minion1"))
         {
-            minionName = minionTag.text;
-            minionTag.text = "(2) " + newName.text;
-            
+            addName = nameTag.text;
+            nameTag.text = "(2) " + newName.text;
         }
         if (gameObject.CompareTag("Minion2"))
         {
-            minionName = minionTag.text;
-            minionTag.text = "(3) " + newName.text;
+            addName = nameTag.text;
+            nameTag.text = "(3) " + newName.text;
         }
         if (gameObject.CompareTag("Minion3"))
         {
-            minionName = minionTag.text;
-            minionTag.text = "(4) " + newName.text;
+            addName = nameTag.text;
+            nameTag.text = "(4) " + newName.text;
         }
 
         GameObject.Find("Player").SendMessage("ActivateMovement");

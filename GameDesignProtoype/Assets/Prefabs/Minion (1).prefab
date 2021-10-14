@@ -262,7 +262,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5088803849476654542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3426051064658725066}
@@ -949,6 +949,7 @@ GameObject:
   - component: {fileID: 572946326503899259}
   - component: {fileID: 2000070422}
   - component: {fileID: -6403780550963178368}
+  - component: {fileID: 6793577129649283054}
   m_Layer: 3
   m_Name: Minion (1)
   m_TagString: Minion1
@@ -1194,6 +1195,10 @@ MonoBehaviour:
   canChangeTo2: 0
   canChangeTo3: 0
   canChangeTo4: 0
+  playerTag: {fileID: 0}
+  minionTag1: {fileID: 4671859932736343401}
+  minionTag2: {fileID: 0}
+  minionTag3: {fileID: 0}
 --- !u!61 &572946326503899259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1244,6 +1249,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 368daa24b12123e49893ab7ac5102fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &6793577129649283054
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742847409326854365}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c548b329a797b7144b845f1f3d5e4a01, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7177349006168345084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,9 +1591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94947074e0251be4f8b4d91ce419dca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionName: 
+  addName: 
   newName: {fileID: 6233493980662554135}
-  minionTag: {fileID: 474230681364520289}
+  nameTag: {fileID: 474230681364520289}
 --- !u!1 &7785384514661150534
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,8 +15,10 @@ public class Change_Character : MonoBehaviour
     public bool canChangeTo2 = false;
     public bool canChangeTo3 = false;
     public bool canChangeTo4 = false;
-
-
+    public GameObject playerTag;
+    public GameObject minionTag1;
+    public GameObject minionTag2;
+    public GameObject minionTag3;
 
     void Start()
     {
@@ -89,6 +91,10 @@ public class Change_Character : MonoBehaviour
             minionCall1.SendMessage("changeColorOff");
             minionCall2.SendMessage("changeColorOff");
             minionCall3.SendMessage("changeColorOff");
+            playerTag.SetActive(true);
+            minionTag1.SetActive(false);
+            minionTag2.SetActive(false);
+            minionTag3.SetActive(false);
         }
     }
     public void ChangeCharacter2()
@@ -108,6 +114,10 @@ public class Change_Character : MonoBehaviour
                 minionCam1.SetActive(true);
                 minionCam2.SetActive(false);
                 minionCam3.SetActive(false);
+                playerTag.SetActive(false);
+                minionTag1.SetActive(true);
+                minionTag2.SetActive(false);
+                minionTag3.SetActive(false);
             }
         }
     }
@@ -129,8 +139,12 @@ public class Change_Character : MonoBehaviour
                 minionCall1.SendMessage("changeColorOff");
                 minionCall2.SendMessage("changeColorOn");
                 minionCall3.SendMessage("changeColorOff");
+                playerTag.SetActive(false);
+                minionTag1.SetActive(false);
+                minionTag2.SetActive(true);
+                minionTag3.SetActive(false);
             }
-    }
+        }
     }
     public void ChangeCharacter4()
     {
@@ -150,6 +164,10 @@ public class Change_Character : MonoBehaviour
                 minionCall1.SendMessage("changeColorOff");
                 minionCall2.SendMessage("changeColorOff");
                 minionCall3.SendMessage("changeColorOn");
+                playerTag.SetActive(false);
+                minionTag1.SetActive(false);
+                minionTag2.SetActive(false);
+                minionTag3.SetActive(true);
             }
         }
     }
