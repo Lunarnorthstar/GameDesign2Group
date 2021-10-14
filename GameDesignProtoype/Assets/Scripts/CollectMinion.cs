@@ -26,7 +26,9 @@ public class CollectMinion : MonoBehaviour
             }
             else
             {
-                
+                GameObject.Find("Minion (1)").SendMessage("TurnChangeOff", 2);
+                GameObject.Find("Minion (2)").SendMessage("TurnChangeOff", 3);
+                GameObject.Find("Minion (3)").SendMessage("TurnChangeOff", 4);
                 gameObject.SendMessage("ActivateMinion");
                 
                 GameObject.Find("Player").SendMessage("DeactivateMovement");

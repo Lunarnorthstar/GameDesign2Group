@@ -53,6 +53,29 @@ public class Change_Character : MonoBehaviour
         }
 
     }
+    public void TurnChangeOff(int number)
+    {
+        switch (number)
+        {
+            case 1:
+                canChangeTo1 = false;
+                break;
+            case 2:
+                canChangeTo2 = false;
+                break;
+            case 3:
+                canChangeTo3 = false;
+                break;
+            case 4:
+                canChangeTo4 = false;
+                break;
+            default:
+                break;
+
+
+        }
+
+    }
     public void ChangeCharacter1()
     {
         if (canChangeTo1 == true)
