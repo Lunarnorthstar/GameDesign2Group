@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Pickup : MonoBehaviour
+public class Player_Pickup : MonoBehaviour //This script handles the collection of powerup/colelctible items. Goes on the item. Dependencies; None. Currently Unused.
 {
     [SerializeField] private Collider2D playerCheck;
     [SerializeField] private LayerMask playerLayers;
@@ -27,4 +27,4 @@ public class Player_Pickup : MonoBehaviour
             manager.RespawnPlayer();
         }
     }
-}
+} //Commenting this would be a waste of time since I doubt we'll use anything in its current state.

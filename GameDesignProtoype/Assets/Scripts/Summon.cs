@@ -3,44 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Summon : MonoBehaviour
+public class Summon : MonoBehaviour //This script handles the teleportation of the minions to the main player. Goes on the minions. Dependencies; None.
 {
-    private float Xpos;
-    private float Ypos;
+    private float Xpos; //
+    private float Ypos; //Stores a position, in this case the position of the main player.
 
-    private bool active = false;
+    private bool active = false; //Whether the minion is active or not.
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        Xpos = GameObject.Find("Player").transform.position.x;
-        Ypos = GameObject.Find("Player").transform.position.y;
+        Xpos = GameObject.Find("Player").transform.position.x; //
+        Ypos = GameObject.Find("Player").transform.position.y; //Sets the stored position to the player's position.
     }
 
 
 
-    public void Activate()
+    public void Activate() //This activates the host.
     {
-        active = true;
+        active = true; //Which it does right here.
     }
     
-    public void Deactivate()
+    public void Deactivate() //And same thing but deactivating.
     {
         active = false;
     }
     
-    public void Call(InputAction.CallbackContext context)
+    public void Call(InputAction.CallbackContext context) //When the player presses the relevant key...
     {
-        if (active)
+        if (active) //If the host is active/collected and thus can be summoned...
         {
-            transform.position = new Vector3(Xpos, Ypos);
+            transform.position = new Vector3(Xpos, Ypos); //Set the host's position to the main player's position. Clipping and/or shoving may ensue.
         }
     }
 }

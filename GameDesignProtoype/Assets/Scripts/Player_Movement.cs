@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player_Movement : MonoBehaviour
+public class Player_Movement : MonoBehaviour //This script handles the movement of the active character. Goes on all characters. Dependencies; CollectMinion.
 {
     [SerializeField] private float moveSpeed, maxSpeed, jumpForce;
     [SerializeField] private Collider2D groundCheck;
@@ -143,11 +143,11 @@ public class Player_Movement : MonoBehaviour
     {
         //this get called from the Killzone script, when the minion enters the death zone, the minion is set to inactive
         isActive = false;
-        isActivatable = false;
+        isActivatable = false; //Also makes them unable to be reactivated.
         gameObject.SendMessage("Deactivate");
-        DeactivateMovement();
+        DeactivateMovement(); //Deactivates their movement.
 
-        gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        gameObject.transform.GetChild(3).gameObject.SetActive(false); //kills all their momentum.
     }
 
    
