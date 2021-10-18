@@ -18,7 +18,7 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
     private SpriteRenderer mySprite;//Your sprite component
     private bool canMove; //Whether or not you can move
     private string objectName; //Your name
-    private bool isActive; //Whether or not You are "active"; Whether you can be controlled and move.
+    private bool isActive = true; //Whether or not You are "active"; Whether you can be controlled and move.
     private bool isActivatable = true; //This gets set to false if You are a minion and You touch the deathplane.
 
     private void Start()
@@ -26,9 +26,13 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
         
         myRB = GetComponent<Rigidbody2D>();
         mySprite = GetComponentInChildren<SpriteRenderer>();
-        
+
+        if (!gameObject.CompareTag("Player"))
+        {
             canMove = false;
             isActive = false;
+        }
+
         //this code checks the tag of the game object, if the object is the player it can move right away and it's active, if it's not the player canMove is set to false
     }
 

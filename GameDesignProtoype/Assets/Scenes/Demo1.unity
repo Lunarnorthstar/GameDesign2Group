@@ -5894,7 +5894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2706763658641491662, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: IsToggleDoor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3601819143496341398, guid: d6b1fa39e972944478cc2dbd3131ec30, type: 3}
       propertyPath: m_Sprite
@@ -8243,6 +8243,18 @@ PrefabInstance:
       propertyPath: minionTag3
       value: 
       objectReference: {fileID: 822504915}
+    - target: {fileID: 395820475, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
+      propertyPath: minionCall1
+      value: 
+      objectReference: {fileID: 376078564}
+    - target: {fileID: 395820475, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
+      propertyPath: minionCall2
+      value: 
+      objectReference: {fileID: 156807731}
+    - target: {fileID: 395820475, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
+      propertyPath: minionCall3
+      value: 
+      objectReference: {fileID: 303036911}
     - target: {fileID: 1433240475469605303, guid: dd169dd72a3755b418f9f8fa560e3634, type: 3}
       propertyPath: m_TagString
       value: Player

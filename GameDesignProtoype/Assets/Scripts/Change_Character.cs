@@ -86,10 +86,10 @@ public class Change_Character : MonoBehaviour //This script handles the changing
             minionCall1.SendMessage("changeColorOff"); //
             minionCall2.SendMessage("changeColorOff"); //
             minionCall3.SendMessage("changeColorOff"); //Set the color of all minions to their inactive color.
-            playerTag.SetActive(true); //Set the host's name tag to be active.
-            minionTag1.SetActive(false); //
-            minionTag2.SetActive(false); //
-            minionTag3.SetActive(false); //Set all the other minion's name tags to be inactive.
+            playerTag.SetActive(false); //Set the host's name tag to be inactive.
+            minionTag1.SetActive(true); //
+            minionTag2.SetActive(true); //
+            minionTag3.SetActive(true); //Set all the other minion's name tags to be active.
         }
     }
     public void ChangeCharacter2() //This function handles swapping to the second character, A.K.A. the first minion.
@@ -109,10 +109,10 @@ public class Change_Character : MonoBehaviour //This script handles the changing
                 minionCam1.SetActive(true); //
                 minionCam2.SetActive(false); //
                 minionCam3.SetActive(false); //Set minion 1's camera to active, and all others to inactive.
-                playerTag.SetActive(false); //
-                minionTag1.SetActive(true); //
-                minionTag2.SetActive(false); //
-                minionTag3.SetActive(false); //Set minion 1's name tag to be active and all others to be inactive.
+                playerTag.SetActive(true); //
+                minionTag1.SetActive(false); //
+                minionTag2.SetActive(true); //
+                minionTag3.SetActive(true); //Set minion 1's name tag to be inactive and all others to be active.
             }
         } //Note that as far as I'm aware (And I didn't write this part) this if statement is redundant functionally. It does seem to help performance by preventing the same code from pointlessly running multiple times.
     }
@@ -134,10 +134,10 @@ public class Change_Character : MonoBehaviour //This script handles the changing
                 minionCall1.SendMessage("changeColorOff");
                 minionCall2.SendMessage("changeColorOn");
                 minionCall3.SendMessage("changeColorOff");
-                playerTag.SetActive(false);
-                minionTag1.SetActive(false);
-                minionTag2.SetActive(true);
-                minionTag3.SetActive(false);
+                playerTag.SetActive(true);
+                minionTag1.SetActive(true);
+                minionTag2.SetActive(false);
+                minionTag3.SetActive(true);
             }
         }
     }
@@ -159,10 +159,10 @@ public class Change_Character : MonoBehaviour //This script handles the changing
                 minionCall1.SendMessage("changeColorOff");
                 minionCall2.SendMessage("changeColorOff");
                 minionCall3.SendMessage("changeColorOn");
-                playerTag.SetActive(false);
-                minionTag1.SetActive(false);
-                minionTag2.SetActive(false);
-                minionTag3.SetActive(true);
+                playerTag.SetActive(true);
+                minionTag1.SetActive(true);
+                minionTag2.SetActive(true);
+                minionTag3.SetActive(false);
             }
         }
     }
