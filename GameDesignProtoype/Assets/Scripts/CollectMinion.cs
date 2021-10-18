@@ -16,6 +16,10 @@ public class CollectMinion : MonoBehaviour //This script handles the collection 
             }
             else //If it hasn't been collected...
             {
+                GameObject.Find("Player").SendMessage("TurnChangeOff", 1);//
+                GameObject.Find("Minion (1)").SendMessage("TurnChangeOff", 1);//
+                GameObject.Find("Minion (2)").SendMessage("TurnChangeOff", 1);//
+                GameObject.Find("Minion (3)").SendMessage("TurnChangeOff", 1);//
                 GameObject.Find("Minion (1)").SendMessage("TurnChangeOff", 2);//
                 GameObject.Find("Minion (2)").SendMessage("TurnChangeOff", 3);//
                 GameObject.Find("Minion (3)").SendMessage("TurnChangeOff", 4);// Temporarily prevent the player from changing characters (Change_Character)...

@@ -26,18 +26,9 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
         
         myRB = GetComponent<Rigidbody2D>();
         mySprite = GetComponentInChildren<SpriteRenderer>();
-        objectName = gameObject.name;
-        if (objectName == "Player")
-        {
-            
-            canMove = true;
-            isActive = true;
-        }
-        else
-        {
+        
             canMove = false;
             isActive = false;
-        }
         //this code checks the tag of the game object, if the object is the player it can move right away and it's active, if it's not the player canMove is set to false
     }
 
@@ -96,7 +87,7 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (canJump)
+        if (canJump && canMove)
         {
             if (context.started)
             {
