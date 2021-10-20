@@ -18,10 +18,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         startPos = player.transform.position;
-        
-        
         PauseGame();
-
     }
 
     public void ReloadScene()
@@ -32,8 +29,6 @@ public class GameManager : MonoBehaviour
     public void RespawnPlayer()
     {
         player.transform.position = startPos;
-        
-        
     }
 
     public void AddScore()

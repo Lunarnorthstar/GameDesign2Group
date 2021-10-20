@@ -8,6 +8,7 @@ TagManager:
   - Minion2
   - Minion3
   - Dead
+  - Goal
   layers:
   - Default
   - TransparentFX
