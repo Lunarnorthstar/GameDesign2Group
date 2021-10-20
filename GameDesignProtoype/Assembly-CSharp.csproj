@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Player_Pickup.cs" />
      <Compile Include="Assets\Scripts\Summon.cs" />
      <Compile Include="Assets\Scripts\checkPoint.cs" />
+     <Compile Include="Assets\Scripts\GoalScript.cs" />
      <Compile Include="Assets\Scripts\UI_TextInputWindow.cs" />
      <Compile Include="Assets\Scripts\CollectMinion.cs" />
      <Compile Include="Assets\Scripts\ClampName.cs" />
