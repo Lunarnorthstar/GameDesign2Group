@@ -995,6 +995,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   cancelJumpEnabled: 0
+  animatorTransform: {fileID: 0}
 --- !u!50 &6742847409326854366
 Rigidbody2D:
   serializedVersion: 4

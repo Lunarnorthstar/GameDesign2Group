@@ -20,12 +20,17 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
     private string objectName; //Your name
     private bool isActive = true; //Whether or not You are "active"; Whether you can be controlled and move.
     private bool isActivatable = true; //This gets set to false if You are a minion and You touch the deathplane.
+    Animator anim; //sets a variable called anim of type Animator
+    float currentSpeed; //this will be used to check for the horizontal velocity of the Rigidbody2D
+    float upSpeed;//this will be used to check for the vertical velocity of the Rigidbody2D
+    public Transform animatorTransform;
 
     private void Start()
     {
         
         myRB = GetComponent<Rigidbody2D>();
         mySprite = GetComponentInChildren<SpriteRenderer>();
+        anim = GetComponentInChildren<Animator>(); //getcomponent Animator and assigns it to anim
 
         if (!gameObject.CompareTag("Player"))
         {
@@ -60,14 +65,40 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
         if (groundCheck.IsTouchingLayers(groundLayers) && canMove == true)
         {
             canJump = true;
+            anim.SetBool("grounded", true);
         } //If you're touching the ground you can jump, otherwise you can't.
         else
         {
             canJump = false;
+            anim.SetBool("grounded", false);
         }
+
+        //Anim Stuff
+        currentSpeed = myRB.velocity.x; //sets currentSpeed variable to the current horizontal velocity of the rigidbody
+
+        //float moveH = Input.GetAxis("Horizontal"); //checks input axis on the horizontal, so A, D or arrow left right buttons. will also work with a controller
+
+        //this following if/else statement checks to see if the user pressed the right/left buttons, and tells the Animator if the right button has been pressed or the left
+        if (moveDir > 0)
+        {
+            mySprite.flipX = false; //flips the gameobject to -1 scale. Depending on which direction your gameobject started off, the -1 may need to be 1 instead
+        }
+        else if (moveDir < 0)
+        {
+            mySprite.flipX = true;
+
+        }
+
+        anim.SetFloat("speed", (Mathf.Abs(currentSpeed))); //checks the currentspeed and outputs the value as speed of the animator. move is added so if trying to move against a wall, it will still play animation, as it will detect the keypres
+
+        //Jump Anim
+        float moveup = Input.GetAxis("Vertical"); //checks input axis on the vertical
+        upSpeed = myRB.velocity.y; //checks what the current vertical speed of the player is, and sets the float upSpeed to that value
+        anim.SetFloat("vSpeed", (upSpeed + moveup)); //tells the animator what the current vertical speed of the player is, in the form of a float called verticalSpeed. if positive, is moving up, negative, is falling
+
     }
 
-    public void Move(InputAction.CallbackContext context)
+        public void Move(InputAction.CallbackContext context)
     {
         if (canMove == true)
         {
@@ -96,7 +127,9 @@ public class Player_Movement : MonoBehaviour //This script handles the movement 
             if (context.started)
             {
                 myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+                
                 canJump = false;
+                anim.SetBool("grounded", false);
             }
         }
 
