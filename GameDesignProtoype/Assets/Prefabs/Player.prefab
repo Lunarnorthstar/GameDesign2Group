@@ -993,7 +993,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 685c6ed2054b9c542b8ea47f13aa553e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93ce7c1b14100a140836df3a707ae16a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1065,6 +1065,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   cancelJumpEnabled: 0
+  animatorTransform: {fileID: 0}
 --- !u!50 &5885951626713334060
 Rigidbody2D:
   serializedVersion: 4

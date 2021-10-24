@@ -904,7 +904,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8fe0e80f81b34a14d838049e1336b1ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa9b8949c7e94da4aace599c38e563bd, type: 3}
   m_Color: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -931,7 +931,7 @@ MonoBehaviour:
   MM1A: {r: 0.9433962, g: 0.27144888, b: 0.29022327, a: 1}
   MM1I: {r: 1, g: 0.50377357, b: 0.50377357, a: 1}
   myObject: {fileID: 6742847408230340486}
-  deadSprite: {fileID: 21300000, guid: b8ec14b1267899e4caabc6a12ece9e02, type: 3}
+  deadSprite: {fileID: 21300000, guid: 4a1d56db607d8c94fae5e410a0ea15c2, type: 3}
 --- !u!1 &6742847409326854365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1260,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3bf640e5458dc454494916446fbaf7de, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c548b329a797b7144b845f1f3d5e4a01, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
