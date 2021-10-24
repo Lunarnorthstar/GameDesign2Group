@@ -1265,8 +1265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MM1: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
-  MM1A: {r: 0.2783019, g: 0.46646973, b: 1, a: 1}
-  MM1I: {r: 0.5509434, g: 0.6440405, b: 1, a: 1}
+  MM1A: {r: 0.4660377, g: 0.6053322, b: 1, a: 1}
+  MM1I: {r: 1, g: 1, b: 1, a: 1}
   myObject: {fileID: 7121530523173412346}
   deadSprite: {fileID: 21300000, guid: 8fd517dd32985244bb767705eeca04f2, type: 3}
 --- !u!95 &7065755101154206720
