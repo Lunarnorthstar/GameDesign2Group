@@ -36,4 +36,12 @@ public class Summon : MonoBehaviour //This script handles the teleportation of t
             transform.position = new Vector3(Xpos, Ypos); //Set the host's position to the main player's position. Clipping and/or shoving may ensue.
         }
     }
+
+    public void OutOfBounds() //When the player presses the relevant key...
+    {
+        if (active) //If the host is active/collected and thus can be summoned...
+        {
+            transform.position = new Vector3(Xpos, Ypos); //Set the host's position to the main player's position. Clipping and/or shoving may ensue.
+        }
+    }
 }
