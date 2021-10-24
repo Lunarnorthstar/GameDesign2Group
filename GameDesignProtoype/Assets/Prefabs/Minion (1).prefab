@@ -843,6 +843,7 @@ GameObject:
   - component: {fileID: 6742847408230340487}
   - component: {fileID: 6742847408230340486}
   - component: {fileID: 6037899958659339884}
+  - component: {fileID: 2749838147723528646}
   m_Layer: 3
   m_Name: MinionSprite1
   m_TagString: Untagged
@@ -931,7 +932,26 @@ MonoBehaviour:
   MM1A: {r: 0.9433962, g: 0.27144888, b: 0.29022327, a: 1}
   MM1I: {r: 1, g: 0.50377357, b: 0.50377357, a: 1}
   myObject: {fileID: 6742847408230340486}
-  deadSprite: {fileID: 21300000, guid: 4a1d56db607d8c94fae5e410a0ea15c2, type: 3}
+  deadSprite: {fileID: 21300000, guid: b365257aa3e2d1c44be7499a9664c9c7, type: 3}
+--- !u!95 &2749838147723528646
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742847408230340484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bbf8e5531660ab04ba44dbf7fc976eb1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6742847409326854365
 GameObject:
   m_ObjectHideFlags: 0
