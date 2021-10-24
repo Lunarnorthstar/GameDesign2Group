@@ -905,7 +905,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aa9b8949c7e94da4aace599c38e563bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7add93d25205ba345b914d0c9b0e694d, type: 3}
   m_Color: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -932,7 +932,7 @@ MonoBehaviour:
   MM1A: {r: 1, g: 0.39607844, b: 0.45490196, a: 1}
   MM1I: {r: 1, g: 1, b: 1, a: 1}
   myObject: {fileID: 6742847408230340486}
-  deadSprite: {fileID: 21300000, guid: c56393edd8c874b418efa5997aa1692c, type: 3}
+  deadSprite: {fileID: 21300000, guid: 055533643f324794997275c30de4fd69, type: 3}
 --- !u!95 &2749838147723528646
 Animator:
   serializedVersion: 3
